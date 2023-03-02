@@ -1,7 +1,7 @@
 export default {
-  name: 'engineering',
+  name: 'magnetomotiveForce',
   type: 'document',
-  title: 'engineering',
+  title: 'magnetomotiveForce',
   fields: [
     {
       name: 'name',

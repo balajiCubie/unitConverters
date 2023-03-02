@@ -1,7 +1,7 @@
 export default {
-  name: 'engineering',
+  name: 'magneticFieldStrength',
   type: 'document',
-  title: 'engineering',
+  title: 'magneticFieldStrength',
   fields: [
     {
       name: 'name',

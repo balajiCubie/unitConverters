@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'heatTransferCoefficient',
   type: 'document',
-  title: 'fluids',
+  title: 'heatTransferCoefficient',
   fields: [
     {
       name: 'name',

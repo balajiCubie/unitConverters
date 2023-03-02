@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'thermalConductivity',
   type: 'document',
-  title: 'fluids',
+  title: 'thermalConductivity',
   fields: [
     {
       name: 'name',

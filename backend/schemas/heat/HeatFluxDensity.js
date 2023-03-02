@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'heatFluxDensity',
   type: 'document',
-  title: 'fluids',
+  title: 'heatFluxDensity',
   fields: [
     {
       name: 'name',

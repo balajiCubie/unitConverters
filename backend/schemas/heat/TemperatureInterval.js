@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'temperatureInterval',
   type: 'document',
-  title: 'fluids',
+  title: 'temperatureInterval',
   fields: [
     {
       name: 'name',

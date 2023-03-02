@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'luminousIntensity',
   type: 'document',
-  title: 'electricity',
+  title: 'luminousIntensity',
   fields: [
     {
       name: 'name',

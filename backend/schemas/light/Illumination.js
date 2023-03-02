@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'illumination',
   type: 'document',
-  title: 'electricity',
+  title: 'illumination',
   fields: [
     {
       name: 'name',

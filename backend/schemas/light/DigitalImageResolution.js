@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'digitalImageResolution',
   type: 'document',
-  title: 'electricity',
+  title: 'digitalImageResolution',
   fields: [
     {
       name: 'name',

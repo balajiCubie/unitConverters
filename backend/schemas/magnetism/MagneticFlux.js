@@ -1,7 +1,7 @@
 export default {
-  name: 'engineering',
+  name: 'magneticFlux',
   type: 'document',
-  title: 'engineering',
+  title: 'magneticFlux',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'fuelEfficientMass',
   type: 'document',
-  title: 'fluids',
+  title: 'fuelEfficientMass',
   fields: [
     {
       name: 'name',

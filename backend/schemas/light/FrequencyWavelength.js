@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'frequencyWaveLength',
   type: 'document',
-  title: 'electricity',
+  title: 'frequencyWaveLength',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'radiationAbsorbedDose',
   type: 'document',
-  title: 'common',
+  title: 'radiationAbsorbedDose',
   fields: [
     {
       name: 'name',

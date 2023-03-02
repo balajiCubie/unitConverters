@@ -1,7 +1,7 @@
 export default {
-  name: 'fluids',
+  name: 'thermalExpansion',
   type: 'document',
-  title: 'fluids',
+  title: 'thermalExpansion',
   fields: [
     {
       name: 'name',
