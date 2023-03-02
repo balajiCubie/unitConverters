@@ -17,7 +17,7 @@ const client = createClient({
 export async function getServerSideProps(context) {
   const slug = context.params.slug
 
-  const post = await client.fetch(`*[_type == "common" && slug.current == $slug][0]`, { slug })
+  const post = await client.fetch(`*[_type == "heat" && slug.current == $slug][0]`, { slug })
 
   return {
     props: {
@@ -45,6 +45,7 @@ const ptComponents = {
 }
 
 const Slug = ({ post }) => {
+
   const [load, setLoad] = useState(true)
 
   return (

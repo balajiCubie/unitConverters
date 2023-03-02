@@ -20,12 +20,12 @@ const navigation = () => {
     {
       title: 'Unit Converters',
       icon: CalculatorIcon,
-      path: '/unit-converters'
+      path: '/allunit'
     },
     {
       title: 'Common Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/common'
     },
     {
       title: 'Engineering Converters',
@@ -35,7 +35,7 @@ const navigation = () => {
     {
       title: 'Heat Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/heat-convertor'
     },
     {
       title: 'Fluid Converters',

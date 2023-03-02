@@ -35,7 +35,7 @@ const client = createClient({
 })
 
 export async function getStaticProps() {
-  const app = await client.fetch(`*[_type == "common"]`)
+  const app = await client.fetch(`*[_type == "heat"]`)
 
   return {
     props: {
@@ -53,7 +53,7 @@ const Calculators = ({ app }) => {
           <>
             {app.slice(0).reverse().map(app => (
               <Grid item xs={12} md={4} key={app._id}>
-                <Trophy name={app?.name} desc={app?.desc} slug={app?.slug} content={app?.content} typCal={app?.typCal} url={"math"}/>
+                <Trophy name={app?.name} desc={app?.desc} slug={app?.slug} content={app?.content} typCal={app?.typCal} url={"finance"}/>
                 {/* <li >{app?.name}</li> */}
               </Grid>
             ))}
