@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'velocity',
     type: 'document',
-    title: 'engineering',
+    title: 'velocity',
     fields: [
       {
         name: 'name',

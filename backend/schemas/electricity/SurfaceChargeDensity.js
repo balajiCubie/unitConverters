@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'surfaceChargeDensity',
   type: 'document',
-  title: 'common',
+  title: 'surfaceChargeDensity',
   fields: [
     {
       name: 'name',

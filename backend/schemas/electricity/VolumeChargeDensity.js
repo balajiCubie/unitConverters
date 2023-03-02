@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'VolumeChargeDensity',
   type: 'document',
-  title: 'common',
+  title: 'VolumeChargeDensity',
   fields: [
     {
       name: 'name',

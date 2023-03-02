@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'commonUnitSystem',
   type: 'document',
-  title: 'common',
+  title: 'commonUnitSystem',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'currentConverter',
   type: 'document',
-  title: 'common',
+  title: 'currentConverter',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'flow',
   type: 'document',
-  title: 'electricity',
+  title: 'flow',
   fields: [
     {
       name: 'name',

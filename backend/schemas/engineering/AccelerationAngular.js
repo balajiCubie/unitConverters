@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'accelerationAngular',
     type: 'document',
-    title: 'engineering',
+    title: 'accelerationAngular',
     fields: [
       {
         name: 'name',

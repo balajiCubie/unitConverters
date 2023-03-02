@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'concentrationMolar',
   type: 'document',
-  title: 'electricity',
+  title: 'concentrationMolar',
   fields: [
     {
       name: 'name',

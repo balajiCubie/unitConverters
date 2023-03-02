@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'flowMolar',
   type: 'document',
-  title: 'electricity',
+  title: 'flowMolar',
   fields: [
     {
       name: 'name',

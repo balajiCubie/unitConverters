@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'inductance',
   type: 'document',
-  title: 'common',
+  title: 'inductance',
   fields: [
     {
       name: 'name',

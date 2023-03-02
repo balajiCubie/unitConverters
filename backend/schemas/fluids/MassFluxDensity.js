@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'massFluxDensity',
   type: 'document',
-  title: 'electricity',
+  title: 'massFluxDensity',
   fields: [
     {
       name: 'name',

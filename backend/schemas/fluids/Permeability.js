@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'permeability',
   type: 'document',
-  title: 'electricity',
+  title: 'permeability',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'momentForce',
     type: 'document',
-    title: 'engineering',
+    title: 'momentForce',
     fields: [
       {
         name: 'name',

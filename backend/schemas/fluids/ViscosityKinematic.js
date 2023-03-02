@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'viscosityKinematic',
   type: 'document',
-  title: 'electricity',
+  title: 'viscosityKinematic',
   fields: [
     {
       name: 'name',

@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'electricResistance',
   type: 'document',
-  title: 'common',
+  title: 'electricResistance',
   fields: [
     {
       name: 'name',

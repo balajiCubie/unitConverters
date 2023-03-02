@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'linearCurrentDensity',
   type: 'document',
-  title: 'common',
+  title: 'linearCurrentDensity',
   fields: [
     {
       name: 'name',

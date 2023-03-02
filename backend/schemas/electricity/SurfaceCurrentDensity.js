@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'surfaceCurrentDensity',
   type: 'document',
-  title: 'common',
+  title: 'surfaceCurrentDensity',
   fields: [
     {
       name: 'name',

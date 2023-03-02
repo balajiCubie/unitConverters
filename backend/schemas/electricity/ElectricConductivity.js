@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'electricConductivity',
   type: 'document',
-  title: 'common',
+  title: 'electricConductivity',
   fields: [
     {
       name: 'name',

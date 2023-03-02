@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'electricConductanceConverter',
   type: 'document',
-  title: 'common',
+  title: 'electricConductanceConverter',
   fields: [
     {
       name: 'name',

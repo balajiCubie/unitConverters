@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'momentofInertia',
     type: 'document',
-    title: 'engineering',
+    title: 'momentofInertia',
     fields: [
       {
         name: 'name',

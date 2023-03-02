@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'electricFieldStrength',
   type: 'document',
-  title: 'common',
+  title: 'electricFieldStrength',
   fields: [
     {
       name: 'name',

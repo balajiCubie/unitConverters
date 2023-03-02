@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'density',
     type: 'document',
-    title: 'engineering',
+    title: 'density',
     fields: [
       {
         name: 'name',

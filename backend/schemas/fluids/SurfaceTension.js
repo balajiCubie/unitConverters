@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'surfaceTension',
   type: 'document',
-  title: 'electricity',
+  title: 'surfaceTension',
   fields: [
     {
       name: 'name',

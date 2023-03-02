@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'electrostaticCapacitance',
   type: 'document',
-  title: 'common',
+  title: 'electrostaticCapacitance',
   fields: [
     {
       name: 'name',

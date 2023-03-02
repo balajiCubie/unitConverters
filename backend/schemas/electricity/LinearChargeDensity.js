@@ -1,7 +1,7 @@
 export default {
-  name: 'common',
+  name: 'linearChargeDensity',
   type: 'document',
-  title: 'common',
+  title: 'linearChargeDensity',
   fields: [
     {
       name: 'name',

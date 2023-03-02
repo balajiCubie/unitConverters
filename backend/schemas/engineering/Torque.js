@@ -1,7 +1,7 @@
 export default {
-    name: 'engineering',
+    name: 'torque',
     type: 'document',
-    title: 'engineering',
+    title: 'torque',
     fields: [
       {
         name: 'name',

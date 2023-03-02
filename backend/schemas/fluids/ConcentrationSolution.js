@@ -1,7 +1,7 @@
 export default {
-  name: 'electricity',
+  name: 'concentrationSolution',
   type: 'document',
-  title: 'electricity',
+  title: 'concentrationSolution',
   fields: [
     {
       name: 'name',
