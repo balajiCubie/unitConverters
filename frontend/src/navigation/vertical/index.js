@@ -30,65 +30,37 @@ const navigation = () => {
     {
       title: 'Engineering Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/engineering'
     },
     {
       title: 'Heat Converters',
       icon: CurrencyInrIcon,
-      path: '/heat-convertor'
+      path: '/heat'
     },
     {
       title: 'Fluid Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/fluid'
     },
     {
       title: 'Light Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/light'
     },
     {
       title: 'Electricity Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/Electricity'
     },
     {
       title: 'Magnetism Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
+      path: '/Magnetism'
     },
     {
       title: 'Radiology Converters',
       icon: CurrencyInrIcon,
-      path: '/common-converter'
-    },
-    {
-      sectionTitle: 'Calculators'
-    },
-    {
-      title: 'Calculators',
-      icon: CalculatorIcon,
-      path: '/calculators'
-    },
-    {
-      title: 'Finance Calculators',
-      icon: CurrencyInrIcon,
-      path: '/finance-calculators'
-    },
-    {
-      title: 'Health Calculators',
-      icon: HospitalIcon,
-      path: '/health-calculators'
-    },
-    {
-      title: 'Math Calculators',
-      icon: FunctionsIcon,
-      path: '/math-calculators'
-    },
-    {
-      title: 'Others Calculators',
-      icon: MoreIcon,
-      path: '/others-calculators'
+      path: '/radiology'
     }
   ]
 }
