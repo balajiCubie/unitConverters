@@ -6,6 +6,15 @@ import FunctionsIcon from 'mdi-material-ui/Function'
 import HospitalIcon from 'mdi-material-ui/Hospital'
 import CurrencyInrIcon from 'mdi-material-ui/CurrencyInr'
 import MoreIcon from 'mdi-material-ui/MathCompass'
+import AccountCircleIcon from 'mdi-material-ui/AccountCircle';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import FluorescentIcon from '@mui/icons-material/Fluorescent';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import RadioIcon from '@mui/icons-material/Radio';
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 
 const navigation = () => {
   return [
@@ -24,43 +33,49 @@ const navigation = () => {
     },
     {
       title: 'Common Converters',
-      icon: CurrencyInrIcon,
+      icon: AccountCircleIcon,
       path: '/common'
     },
     {
       title: 'Engineering Converters',
-      icon: CurrencyInrIcon,
+      icon: EngineeringIcon,
       path: '/engineering'
     },
     {
       title: 'Heat Converters',
-      icon: CurrencyInrIcon,
+      icon: LocalFireDepartmentIcon,
       path: '/heat'
     },
     {
       title: 'Fluid Converters',
-      icon: CurrencyInrIcon,
+      icon: FluorescentIcon,
       path: '/fluid'
     },
     {
       title: 'Light Converters',
-      icon: CurrencyInrIcon,
+      icon: LightModeIcon,
       path: '/light'
     },
     {
       title: 'Electricity Converters',
-      icon: CurrencyInrIcon,
-      path: '/Electricity'
+      icon: ElectricBoltIcon,
+      path: '/electricity'
     },
     {
       title: 'Magnetism Converters',
-      icon: CurrencyInrIcon,
+      icon: ManageSearchIcon,
       path: '/Magnetism'
     },
     {
       title: 'Radiology Converters',
-      icon: CurrencyInrIcon,
+      icon: RadioIcon,
       path: '/radiology'
+    }
+    ,
+    {
+      title: 'Others Converters',
+      icon: FamilyRestroomIcon,
+      path: '/others'
     }
   ]
 }
