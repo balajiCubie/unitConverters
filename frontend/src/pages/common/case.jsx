@@ -35,7 +35,7 @@ const client = createClient({
 })
 
 export async function getStaticProps() {
-  const app = await client.fetch(`*[_type == "common"]`)
+  const app = await client.fetch(`*[_type == "case"]`)
 
   return {
     props: {
