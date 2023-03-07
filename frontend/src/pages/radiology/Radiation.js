@@ -1,170 +1,67 @@
-export default {
-  name: 'common',
-  type: 'document',
-  title: 'common',
-  fields: [
-    {
-      name: 'name',
-      type: 'string',
-      title: 'Name',
-    },
-    {
-      title: 'Slug',
-      name: 'slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 200, // will be ignored if slugify is set
-        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
-      },
-    },
-    {
-      title: 'Description',
-      name: 'desc',
-      type: 'string',
-      description: 'Make it catchy',
-    },
-    {
-      title: 'TypeOfCalculator',
-      name: 'typCal',
-      type: 'string',
-      description: 'Make related calculator',
-    },
-    {
-      title: 'Image URL',
-      name: 'img',
-      type: 'url',
-    },
-    {
-      title: 'Iframe URL',
-      name: 'iframe',
-      type: 'url',
-    },
-    {
-      title: 'Content', 
-      name: 'content',
-      type: 'array', 
-      of: [{type: 'block'}]
-    },
-    {
-      title: 'Title: Reference 1',
-      name: 'titleReference1',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 1',
-      name: 'urlReference1',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 1',
-      name: 'descReference1',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 1',
-      name: 'imgReference1',
-      type: 'url',
-    },
-    {
-      title: 'Title: Reference 2',
-      name: 'titleReference2',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 2',
-      name: 'urlReference2',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 2',
-      name: 'descReference2',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 2',
-      name: 'imgReference2',
-      type: 'url',
-    },
-    {
-      title: 'Title: Reference 3',
-      name: 'titleReference3',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 3',
-      name: 'urlReference3',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 3',
-      name: 'descReference3',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 3',
-      name: 'imgReference3',
-      type: 'url',
-    },
-    {
-      title: 'Title: Reference 4',
-      name: 'titleReference4',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 4',
-      name: 'urlReference4',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 4',
-      name: 'descReference4',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 4',
-      name: 'imgReference4',
-      type: 'url',
-    },
-    {
-      title: 'Title: Reference 5',
-      name: 'titleReference5',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 5',
-      name: 'urlReference5',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 5',
-      name: 'descReference5',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 5',
-      name: 'imgReference5',
-      type: 'url',
-    },
-    {
-      title: 'Title: Reference 6',
-      name: 'titleReference6',
-      type: 'string',
-    },
-    {
-      title: 'URL: Reference 6',
-      name: 'urlReference6',
-      type: 'url',
-    },
-    {
-      title: 'Description: Reference 6',
-      name: 'descReference6',
-      type: 'string',
-    },
-    {
-      title: 'Image: Reference 6',
-      name: 'imgReference6',
-      type: 'url',
-    },
-  ],
+
+// ** MUI Imports
+import Grid from '@mui/material/Grid'
+import Dropdown from 'react-bootstrap/Dropdown';
+
+// import CurrencyUsd from 'mdi-material-ui/CurrencyUsd'
+// import HelpCircleOutline from 'mdi-material-ui/HelpCircleOutline'
+// import BriefcaseVariantOutline from 'mdi-material-ui/BriefcaseVariantOutline'
+
+// ** Custom Components Imports
+// import CardStatisticsVerticalComponent from 'src/@core/components/card-statistics/card-stats-vertical'
+
+// ** Styled Component Import
+import ApexChartWrapper from 'src/@core/styles/libs/react-apexcharts'
+
+// ** Demo Components Imports
+// import Table from 'src/views/dashboard/Table'
+
+import Trophy from 'src/views/dashboard/Trophy'
+
+// import TotalEarning from 'src/views/dashboard/TotalEarning'
+// import StatisticsCard from 'src/views/dashboard/StatisticsCard'
+// import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
+// import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
+// import SalesByCountries from 'src/views/dashboard/SalesByCountries'
+
+// Sanity
+import { createClient } from 'next-sanity'
+
+const client = createClient({
+  projectId: 'avr7487u',
+  dataset: 'production',
+  apiVersion: '2021-10-14',
+  useCdn: false
+})
+
+export async function getStaticProps() {
+  const app = await client.fetch(`*[_type == "case"]`)
+
+  return {
+    props: {
+      app
+    }
+  }
 }
+
+const Calculators = ({ app }) => {
+  return (
+    <ApexChartWrapper>
+
+      <Grid container spacing={6}>
+        {/* {app.length > 0 && ( */}
+          <>
+            {app.slice(0).reverse().map(app => (
+              <Grid item xs={12} md={4} key={app._id}>
+                <Trophy name={app?.name} desc={app?.desc} slug={app?.slug} content={app?.content} typCal={app?.typCal} url={"common"}/>
+                {/* <li >{app?.name}</li> */}
+              </Grid>
+            ))}
+          </>
+        {/* )} */}
+      </Grid>
+    </ApexChartWrapper>
+  )
+}
+
+export default Calculators
