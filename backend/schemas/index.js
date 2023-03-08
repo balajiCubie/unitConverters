@@ -84,6 +84,34 @@ import Radiation from './radiology/Radiation'
 import RadiationAbsorbedDose from './radiology/RadiationAbsorbedDose'
 import RadiationActivity from './radiology/RadiationActivity'
 import RadiationExposure from './radiology/RadiationExposure'
+import aList from './categories/aList'
+import bList from './categories/bList'
+import cList from './categories/cList'
+import dList from './categories/dList'
+import eList from './categories/eList'
+import fList from './categories/fList'
+import gList from './categories/gList'
+import hList from './categories/hList'
+import iList from './categories/iList'
+import jList from './categories/jList'
+import kList from './categories/kList'
+import lList from './categories/lList'
+import mList from './categories/mList'
+import nList from './categories/nList'
+import oList from './categories/oList'
+import pList from './categories/pList'
+import qList from './categories/qList'
+import rList from './categories/rList'
+import sList from './categories/sList'
+import tList from './categories/tList'
+import uList from './categories/uList'
+import vList from './categories/vList'
+import wList from './categories/wList'
+import xList from './categories/xList'
+import yList from './categories/yList'
+import zList from './categories/zList'
+import categoriesList from './categories/categoriesList'
+import numbercategoriesList from './categories/number'
 
 
 
@@ -100,6 +128,34 @@ export const schemaTypes = [
   magnetism,
   radiology,
   others,
+  categoriesList,
+  numbercategoriesList,
+  aList,
+  bList,
+  cList,
+  dList,
+  eList,
+  fList,
+  gList,
+  hList,
+  iList,
+  jList,
+  kList,
+  lList,
+  mList,
+  nList,
+  oList,
+  pList,
+  qList,
+  rList,
+  sList,
+  tList,
+  uList,
+  vList,
+  wList,
+  xList,
+  yList,
+  zList,
   case1,
   angle,
   area,
