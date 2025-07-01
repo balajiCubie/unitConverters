@@ -1,37 +1,11 @@
-# Backend - Sanity.io Studio
+# Sanity Blogging Content Studio
 
-This is the Sanity.io studio for the Unit Converter application. It is used to manage all the content for the application, including units, categories, and their relationships.
+Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
 
-## Schemas
+Now you can do the following things:
 
-The content models are defined in the `schemas` directory. Each file in this directory defines a different type of content that can be managed in the studio.
-
-## Getting Started
-
-1.  **Install Dependencies:**
-    ```bash
-    npm install
-    ```
-
-2.  **Run the Development Server:**
-    ```bash
-    npm run dev
-    ```
-    The Sanity studio will be available at `http://localhost:3333`.
-
-## Scripts
-
--   `npm run dev`: Starts the Sanity studio in development mode.
--   `npm run start`: Starts the Sanity studio.
--   `npm run build`: Builds the Sanity studio for production.
--   `npm run deploy`: Deploys the Sanity studio.
--   `npm run deploy-graphql`: Deploys the GraphQL API.
-
-## Dependencies
-
-This project uses the following key dependencies:
-
--   [Sanity.io](https://www.sanity.io/)
--   [React](https://reactjs.org/)
-
-For a full list of dependencies, see the `package.json` file.
+- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
+- Check out the example frontend: [React/Next.js](https://github.com/sanity-io/tutorial-sanity-blog-react-next)
+- [Read the blog post about this template](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme)
+- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
+- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
