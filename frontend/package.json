@@ -16,6 +16,9 @@
     "url": "https://github.com/themeselection/materio-mui-react-nextjs-admin-template-free.git"
   },
   "homepage": "https://themeselection.com/products/materio-free-mui-react-nextjs-admin-template/",
+  "engines": {
+    "node": "22.x"
+  },
   "keywords": [
     "react",
     "javascript",
