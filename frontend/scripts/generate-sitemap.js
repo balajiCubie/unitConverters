@@ -18,7 +18,7 @@ const projectRoot = path.resolve(__dirname, '..');
 const pagesDirs = [path.join(projectRoot, 'pages'), path.join(projectRoot, 'src', 'pages')];
 const outPath = path.join(projectRoot, 'public', 'sitemap.xml');
 const dynamicRoutesFile = path.join(__dirname, 'sitemap-routes.json');
-const SITE_URL = process.env.SITE_URL || 'http://localhost:3000';
+const SITE_URL = process.env.SITE_URL || 'https://unitconvertor.cuvisoft.in';
 
 function isPageFile(file) {
   return /\.(js|jsx|ts|tsx)$/i.test(file);
