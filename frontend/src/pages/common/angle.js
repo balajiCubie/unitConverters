@@ -1,4 +1,7 @@
 
+// ** Next Imports
+import Head from 'next/head'
+
 // ** MUI Imports
 import Grid from '@mui/material/Grid'
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -45,8 +48,32 @@ export async function getStaticProps() {
 }
 
 const Calculators = ({ app }) => {
+  const pageTitle = app?.name ? `${app[0].name} Unit Converter` : 'Angle Unit Converter';
+  const pageDescription = app?.desc || 'Convert various angle units quickly and accurately.';
+  const pageKeywords = app?.keywords || 'angle converter, degrees, radians, gradians, minutes, seconds';
+  const pageUrl = `https://www.cuvisoft.com/common/angle`; // Replace with actual URL if dynamic
+
   return (
     <ApexChartWrapper>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta name='description' content={pageDescription} />
+        <meta name='keywords' content={pageKeywords} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDescription} />
+        <meta property="og:image" content="https://www.cuvisoft.com/images/cards/analog-clock.jpg" /> {/* Replace with a relevant image */}
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pageUrl} />
+        <meta property="twitter:title" content={pageTitle} />
+        <meta property="twitter:description" content={pageDescription} />
+        <meta property="twitter:image" content="https://www.cuvisoft.com/images/cards/analog-clock.jpg" /> {/* Replace with a relevant image */}
+      </Head>
 
       <Grid container spacing={6}>
         {/* {app.length > 0 && ( */}

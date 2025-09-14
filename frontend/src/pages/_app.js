@@ -52,13 +52,42 @@ const App = props => {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>{`${themeConfig.templateName} - Material Design React Admin Template`}</title>
+        <title>{pageProps.seo?.title || `Unit Converters - Convert Units Easily`}</title>
         <meta
           name='description'
-          content={`${themeConfig.templateName} – Material Design React Admin Dashboard Template – is the most developer friendly & highly customizable Admin Dashboard Template based on MUI v5.`}
+          content={
+            pageProps.seo?.description ||
+            `A comprehensive online unit converter for various categories like common, electricity, engineering, fluid, heat, light, magnetism, others, and radiology. Convert units quickly and accurately.`
+          }
         />
-        <meta name='keywords' content='Material Design, MUI, Admin Template, React Admin Template' />
+        <meta name='keywords' content={pageProps.seo?.keywords || 'unit converter, online converter, electricity units, engineering units, fluid units, heat units, light units, magnetism units, radiology units, convert units'} />
         <meta name='viewport' content='initial-scale=1, width=device-width' />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={pageProps.seo?.ogUrl || "https://www.cuvisoft.com/unit-converters"} />
+        <meta property="og:title" content={pageProps.seo?.ogTitle || `Unit Converters - Convert Units Easily`} />
+        <meta
+          property="og:description"
+          content={
+            pageProps.seo?.ogDescription ||
+            `A comprehensive online unit converter for various categories like common, electricity, engineering, fluid, heat, light, magnetism, others, and radiology. Convert units quickly and accurately.`
+          }
+        />
+        <meta property="og:image" content={pageProps.seo?.ogImage || "https://www.cuvisoft.com/images/misc/materio-pro-banner.png"} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={pageProps.seo?.twitterUrl || "https://www.cuvisoft.com/unit-converters"} />
+        <meta property="twitter:title" content={pageProps.seo?.twitterTitle || `Unit Converters - Convert Units Easily`} />
+        <meta
+          property="twitter:description"
+          content={
+            pageProps.seo?.twitterDescription ||
+            `A comprehensive online unit converter for various categories like common, electricity, engineering, fluid, heat, light, magnetism, others, and radiology. Convert units quickly and accurately.`
+          }
+        />
+        <meta property="twitter:image" content={pageProps.seo?.twitterImage || "https://www.cuvisoft.com/images/misc/materio-pro-banner.png"} />
       </Head>
 
       <SettingsProvider>
